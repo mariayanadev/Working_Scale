@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,6 +9,7 @@ export default {
     extend: {
       colors:{
         textColor:'#1FA046',
+        underlineColor:' #00ff00'
       }
     },
   },
