@@ -1,10 +1,12 @@
-import Input from "./assets/components/Input"
+import InputCargo from "./assets/components/InputCargo"
+import InputNome from "./assets/components/InputNome"
 
 function App() {
 
   return (
-    <div className='flex flex-row gap-3'>
-      <Input></Input>
+    <div className='flex flex-col gap-3'>
+      <InputNome></InputNome>
+      <InputCargo></InputCargo>
     </div>
   )
 }

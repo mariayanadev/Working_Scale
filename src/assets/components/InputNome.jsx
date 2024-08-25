@@ -1,6 +1,6 @@
 
 
-function Input() {
+function InputNome() {
     return (
         <div className="flex flex-row content-center justify-center">
             <label className="h-6 px-4 text-base text-black">Nome</label>
@@ -13,4 +13,4 @@ function Input() {
     )
 }
 
-export default Input
+export default InputNome
