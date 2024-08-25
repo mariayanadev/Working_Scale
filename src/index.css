@@ -17,3 +17,11 @@
     font-family: robotoBlack;
     src: url(assets/fonts/Roboto-Black.ttf);
 }
+footer {
+    background: rgb(0,36,26);
+    background: linear-gradient(90deg, rgba(0,36,26,0.8295693277310925) 0%, rgba(47,121,9,0.15730042016806722) 100%);
+}
+
+body{
+    height: 100vh;
+}
