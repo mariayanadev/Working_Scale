@@ -1,7 +1,9 @@
 export const TelaCadastro = () => {
     function toggleContainer() {
         let c = document.getElementById("containerCadastro");
+        let body = document.body;
         c.classList.toggle("hidden");
+        body.classList.toggle("overflow-hidden");
     }
     return (
         <>
