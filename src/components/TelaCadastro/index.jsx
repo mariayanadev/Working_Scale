@@ -1,13 +1,8 @@
+import { toggleContainer } from "../functions";
 export const TelaCadastro = () => {
-    function toggleContainer() {
-        let c = document.getElementById("containerCadastro");
-        let body = document.body;
-        c.classList.toggle("hidden");
-        body.classList.toggle("overflow-hidden");
-    }
     return (
         <>
-            <div id="containerCadastro" className="w-screen h-screen absolute bg-[#000a]">
+            <div id="containerCadastro" className="hidden transition-opacity opacity-0 w-screen h-screen fixed bg-[#000a]">
                 <div className="w-full h-full flex justify-center items-center">
                     <div className="flex flex-col w-[500px] h-fit pb-6 bg-[#bbedca] rounded-lg overflow-hidden shadow-lg shadow-gray-600 ">
                         <div
@@ -20,7 +15,7 @@ export const TelaCadastro = () => {
 
                             <button id="cancelar" onClick={toggleContainer}>
                                 <img
-                                    src="src/images/cancelar.png"
+                                    src="src/assets/icons/cancelar.png"
                                     className="invert size-7 flex "
                                 />
                             </button>
@@ -93,19 +88,19 @@ export const TelaCadastro = () => {
                                     className="flex flex-row justify-between text-sm font-bold mx-14 mt-4"
                                 >
                                     <span className="flex items-center">
-                                        <input type="radio" name="6x1" />
+                                        <input type="radio" value="6x1" name="tipoEscala" />
                                         <label>6x1 </label>
                                     </span>
                                     <span className="flex items-center">
-                                        <input type="radio" name="5x1" />
+                                        <input type="radio" value="5x1" name="tipoEscala" />
                                         <label>5x1 </label>
                                     </span>
                                     <span className="flex items-center">
-                                        <input type="radio" name="5x2" />
+                                        <input type="radio" value="5x2" name="tipoEscala" />
                                         <label>5x2 </label>
                                     </span>
                                     <span className="flex items-center">
-                                        <input type="radio" name="12x36" />
+                                        <input type="radio" value="12x36" name="tipoEscala" />
                                         <label>12x36 </label>
                                     </span>
                                 </div>
