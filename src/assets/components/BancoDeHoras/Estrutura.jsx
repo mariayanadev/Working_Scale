@@ -1,13 +1,14 @@
 import ButtonBanco from "../Buttons/ButtonBanco"
 import InputNome from "../Inputs/InputBanco"
 import ButtonAtualizar from "../Buttons/ButtonAtualizar"
+import TableBanco from "../BancoDeHoras/Table/TableBanco"
 
 function Estrutura() {
     return (
 
-        <body className="flex justify-center items-center mt-11">
-            <div className="w-[800px] h-[500px] border border-gray-500">
-                <header className="text-black bg-gray-300 w-full h-12">
+        <body className="flex justify-center items-center mt-11 font-robotoBold">
+            <div className="w-[800px] h-[500px] border border-gray-500 bg-gray-100">
+                <header className="text-black w-full h-12 bg-green-bold">
                     <h1 className="translate-x-4 translate-y-3">CÁLCULO</h1>
                     <div className="translate-x-1/2 -translate-y-4">
                         <ButtonBanco></ButtonBanco>
@@ -41,6 +42,11 @@ function Estrutura() {
 
                             <div className="w-[193] -translate-y-[109px] translate-x-[670px]">
                                 <ButtonAtualizar></ButtonAtualizar>
+                            </div>
+
+
+                            <div className="translate-x-28 -translate-y-12">
+                                <TableBanco></TableBanco>
                             </div>
 
                         </div>
